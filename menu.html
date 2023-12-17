@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900"
+          rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/menu.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <script src="scripts/menu.js"></script>
+    <title>Menu</title>
+</head>
+<body>
+<header>
+    <div class="header-wrapper">
+        <a href="index.html"><img class="logo" src="./images/icons/logo.svg" alt="Logo"></a>
+        <nav>
+            <ul class="navigation">
+                <li>
+                    <a class="navigation__link" href="#favourites">Favorite coffee</a>
+                    <hr class="link__underline">
+                </li>
+                <li>
+                    <a class="navigation__link" href="#about">About</a>
+                    <hr class="link__underline">
+                </li>
+                <li>
+                    <a class="navigation__link" href="#apps">Mobile app</a>
+                    <hr class="link__underline">
+                </li>
+                <li>
+                    <a class="navigation__link" href="#footer">Contact us</a>
+                    <hr class="link__underline">
+                </li>
+            </ul>
+        </nav>
+        <div class="menu">
+            <span class="menu__link">Menu</span>
+            <hr class="link__underline-menu">
+        </div>
+        <a href="#" class="burger-menu">
+            <div class="burger-icon">
+                <div class="burger-icon-line"></div>
+                <div class="burger-icon-line"></div>
+            </div>
+        </a>
+    </div>
+    <ul class="mobile-menu hidden">
+        <li>
+            <a class="mobile-menu__link" href="index.html#favourites">Favorite coffee</a>
+        </li>
+        <li>
+            <a class="mobile-menu__link" href="index.html#about">About</a>
+        </li>
+        <li>
+            <a class="mobile-menu__link" href="index.html#apps">Mobile app</a>
+        </li>
+        <li>
+            <a class="mobile-menu__link" href="#footer">Contact us</a>
+        </li>
+        <li>
+            <a class="mobile-menu__link menu-cup" href="menu.html">
+                <span>Menu</span>
+                <img class="big-cup" src="images/icons/coffee-cup.svg" alt="cup">
+            </a>
+        </li>
+    </ul>
+</header>
+<main>
+    <section>
+        <h1 class="title__menu">Behind each of our cups hides an <i class="enjoy__content--italic">amazing surprise</i>
+        </h1>
+        <div class="switcher">
+            <div class="switcher__button --active" data-type="coffee">
+                <div class="switcher__image">
+                    <img src="images/icons/coffee.svg" alt="coffee">
+                </div>
+                Coffee
+            </div>
+            <div class="switcher__button" data-type="tea">
+                <div class="switcher__image">
+                    <img src="images/icons/tea.svg" alt="tea">
+                </div>
+                Tea
+            </div>
+            <div class="switcher__button" data-type="dessert">
+                <div class="switcher__image">
+                    <img src="images/icons/dessert.svg" alt="dessert">
+                </div>
+                Dessert
+            </div>
+        </div>
+        <div class="coffee-menu"></div>
+        <div class="menu__item menu__template" data-id="">
+            <img class="item__img" src="images/menu/coffee-1.jpg" alt="item">
+            <div class="menu__desc">
+                <h3 class="menu__title">Title</h3>
+                <p class="menu__text">Description</p>
+                <div class="menu__price">0</div>
+            </div>
+        </div>
+        <img class="load-more" src="images/icons/round.svg" alt="load more">
+    </section>
+    <div id="modalMenu" class="modal-menu">
+        <div class="modal-wrapper">
+            <img class="modal__image" src="images/menu/coffee-1.jpg" alt="coffee-1">
+            <div class="modal__content-wrapper">
+                <div class="modal__content-wrapper-small">
+                    <h3>Irish coffee</h3>
+                    <h4>Fragrant black coffee with Jameson Irish whiskey and whipped milk</h4>
+                </div>
+                <div class="switchers-wrapper">
+                    <h4>Size</h4>
+                    <div class="modal-switcher sizes"></div>
+                </div>
+                <div class="switchers-wrapper">
+                    <h4>Additives</h4>
+                    <div class="modal-switcher additives"></div>
+                </div>
+                <div class="modal-switcher__button switcher-template" data-price="0">
+                    <h4 class="modal-switcher__image"></h4>
+                    <h4 class="switcher__size"></h4>
+                </div>
+                <div class="total-wrapper">
+                    <h3 class="total">Total:</h3>
+                    <h3 class="total total-price">$7.00</h3>
+                </div>
+                <div>
+                    <hr class="horizontal-line">
+                    <div class="alert">
+                        <div>
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <g id="info-empty" clip-path="url(#clip0_268_9737)">
+                                    <path id="Vector" d="M8 7.66663V11" stroke="#403F3D" stroke-linecap="round"
+                                          stroke-linejoin="round"/>
+                                    <path id="Vector_2" d="M8 5.00667L8.00667 4.99926" stroke="#403F3D"
+                                          stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path id="Vector_3"
+                                          d="M8.00016 14.6667C11.6821 14.6667 14.6668 11.6819 14.6668 8.00004C14.6668 4.31814 11.6821 1.33337 8.00016 1.33337C4.31826 1.33337 1.3335 4.31814 1.3335 8.00004C1.3335 11.6819 4.31826 14.6667 8.00016 14.6667Z"
+                                          stroke="#403F3D" stroke-linecap="round" stroke-linejoin="round"/>
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_268_9737">
+                                        <rect width="16" height="16" fill="white"/>
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </div>
+                        <p class="modal-text">The cost is not final. Download our mobile app to see the final price and
+                            place your order. Earn loyalty
+                            points and enjoy your favorite coffee with up to 20% discount.
+                        </p>
+                    </div>
+                </div>
+                <div class="modal-switcher__button modal__close --full-width">
+                    Close
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+<footer id="footer" class="footer">
+    <div class="footer__column">
+        <p class="footer__tagline">Sip, Savor, Smile.</p>
+        <p class="footer__tagline footer__tagline--dark"><i class="enjoy__content--italic">It’s coffee time!</i></p>
+        <div class="footer__socials">
+            <svg class="footer__social" width="60" height="60" viewBox="0 0 60 60" fill="none"
+                 xmlns="http://www.w3.org/2000/svg">
+                <rect x="0.5" y="0.5" width="59" height="59" rx="29.5" stroke="#C1B6AD"/>
+                <path d="M41 21.0101C41 21.0101 38.9821 22.2022 37.86 22.5401C37.2577 21.8476 36.4573 21.3567 35.567 21.134C34.6767 20.9112 33.7395 20.9673 32.8821 21.2945C32.0247 21.6218 31.2884 22.2045 30.773 22.9638C30.2575 23.7231 29.9877 24.6224 30 25.5401V26.5401C28.2426 26.5856 26.5013 26.1959 24.931 25.4055C23.3607 24.6151 22.0103 23.4487 21 22.0101C21 22.0101 17 31.0101 26 35.0101C23.9405 36.408 21.4872 37.109 19 37.0101C28 42.0101 39 37.0101 39 25.5101C38.9991 25.2315 38.9723 24.9537 38.92 24.6801C39.9406 23.6735 41 21.0101 41 21.0101Z"
+                      stroke="#E1D4C9" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <svg class="footer__social" width="60" height="60" viewBox="0 0 60 60" fill="none"
+                 xmlns="http://www.w3.org/2000/svg">
+                <rect x="0.5" y="0.5" width="59" height="59" rx="29.5" stroke="#C1B6AD"/>
+                <path d="M30 34C32.2091 34 34 32.2091 34 30C34 27.7909 32.2091 26 30 26C27.7909 26 26 27.7909 26 30C26 32.2091 27.7909 34 30 34Z"
+                      stroke="#E1D4C9" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M21 34V26C21 23.2386 23.2386 21 26 21H34C36.7614 21 39 23.2386 39 26V34C39 36.7614 36.7614 39 34 39H26C23.2386 39 21 36.7614 21 34Z"
+                      stroke="#E1D4C9"/>
+                <path d="M35.5 24.51L35.51 24.4989" stroke="#E1D4C9" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <svg class="footer__social" width="60" height="60" viewBox="0 0 60 60" fill="none"
+                 xmlns="http://www.w3.org/2000/svg">
+                <rect x="0.5" y="0.5" width="59" height="59" rx="29.5" stroke="#C1B6AD"/>
+                <path d="M35 20H32C30.6739 20 29.4021 20.5268 28.4645 21.4645C27.5268 22.4021 27 23.6739 27 25V28H24V32H27V40H31V32H34L35 28H31V25C31 24.7348 31.1054 24.4804 31.2929 24.2929C31.4804 24.1054 31.7348 24 32 24H35V20Z"
+                      stroke="#E1D4C9" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        </div>
+    </div>
+    <div class="footer__column">
+        <p class="footer__contacts">Contact us</p>
+        <a href="https://maps.app.goo.gl/RkiR1aUdoYiCbheg7" target="_blank">
+            <div class="footer__contacts-item">
+                <img class="footer__contacts-icon" src="./images/icons/address.svg" alt="Address">
+                <p class="footer__contacts-content">8558 Green Rd., LA</p>
+            </div>
+        </a>
+        <a href='tel:+1(603)555-0123'>
+            <div class="footer__contacts-item">
+                <img class="footer__contacts-icon" src="./images/icons/phone.svg" alt="Phone">
+                <p class="footer__contacts-content">+1 (603) 555-0123</p>
+            </div>
+        </a>
+        <div class="footer__contacts-item">
+            <img class="footer__contacts-icon" src="./images/icons/clock.svg" alt="Clock">
+            <p class="footer__contacts-content">Mon-Sat: 9:00 AM – 23:00 PM</p>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
